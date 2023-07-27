@@ -12,7 +12,7 @@ public class Locators_Actime_Checkbox_01 {
 		//pre condition-Maxmize
 		Driver.manage().window().maximize();
 		//pass the main URL of the application
-		Driver.get("https://facebook.com");
+		Driver.get("https://demo.actitime.com/login.do");
 		//fine the username text fiels and enter the data
 		WebElement usernameTextfield=Driver.findElement(By.name("username"));
 		usernameTextfield.sendKeys("admin");
@@ -25,7 +25,7 @@ public class Locators_Actime_Checkbox_01 {
 		Thread.sleep(7000);
 		Driver.manage().window().minimize();
 		//terminate the session
-		Driver.close();
+		Driver.quit();
 	}
 }
 
